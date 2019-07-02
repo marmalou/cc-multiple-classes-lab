@@ -13,5 +13,11 @@ class BusStop
   def add_person_to_queue(person)
     @queue.unshift(person)
   end
-  
+
+  def get_and_remove_passengers_from_queue()
+    leaving_passengers = Array.new(@queue)
+    @queue.clear()
+    return leaving_passengers
+  end
+
 end
