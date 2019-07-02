@@ -31,6 +31,7 @@ class Bus
   def pickup_from_stop(bus_stop)
     new_passengers = bus_stop.get_and_remove_passengers_from_queue()
     @passengers += new_passengers
+    p @passengers
   end
 
 end
